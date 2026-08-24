@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: hw03-nguyendangduong-cntt2-it213-ss10
+
+    ai:
+        openai:
+            api-key: ${OPENAI_API_KEY}
+            base-url: ${OPEN_ROUTER_BASED_URL}
+            chat:
+                model: ${OPEN_ROUTER_MODEL}
+                temperature: 0.0
+
+langfuse:
+    public-key: ${LANGFUSE_PUBLIC_KEY}
+    secret-key: ${LANGFUSE_SECRET_KEY}
+    base-url: ${LANGFUSE_BASE_URL:http://localhost:3000}
